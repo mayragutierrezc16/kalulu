@@ -1149,6 +1149,9 @@ nav a {
         min-height: 300px;
         max-width: 100%;
     }
+    .seccion-juego .imagen-juego .degradado {
+        height: 60px; /* Degradado más corto */
+    }
 }
 
 @media (max-width: 768px) {
@@ -1177,6 +1180,9 @@ nav a {
         order: 2; /* Foto abajo */
         min-height: 200px;
         max-width: 100%;
+    }
+    .seccion-juego .imagen-juego .degradado {
+        height: 40px; /* Degradado más corto */
     }
 }
 
@@ -1208,6 +1214,9 @@ nav a {
         width: 100%;
         padding: 0.6rem 0;
         font-size: 1rem;
+    }
+    .seccion-juego .imagen-juego .degradado {
+        height: 24px; /* Degradado más corto */
     }
 }
 
