@@ -493,7 +493,6 @@ nav a {
     z-index: 2;
     pointer-events: none;
 }
-
 @media (max-width: 900px) {
     .bloque-importante .contenido {
         padding: 40px 0;
@@ -503,6 +502,14 @@ nav a {
         max-width: 100vw;
         left: 0;
         transform: none;
+        text-align: left; /* Justifica a la izquierda */
+    }
+    .bloque-importante .contenido h2 {
+        font-size: 2.2rem; /* Título más pequeño */
+        text-align: left;
+    }
+    .bloque-importante .imagen .degradado {
+        height: 105%; /* Degradado apenas más alto que la imagen */
     }
 }
 
@@ -515,12 +522,17 @@ nav a {
         max-width: 100vw;
         left: 0;
         transform: none;
+        text-align: left;
+    }
+    .bloque-importante .contenido h2 {
+        font-size: 1.6rem;
+        text-align: left;
     }
     .bloque-importante .imagen {
         min-height: 200px;
     }
     .bloque-importante .imagen .degradado {
-        height: 80px;
+        height: 105%;
     }
 }
 
@@ -533,12 +545,17 @@ nav a {
         max-width: 100vw;
         left: 0;
         transform: none;
+        text-align: left;
+    }
+    .bloque-importante .contenido h2 {
+        font-size: 1.2rem;
+        text-align: left;
     }
     .bloque-importante .imagen {
         min-height: 120px;
     }
     .bloque-importante .imagen .degradado {
-        height: 40px;
+        height: 105%;
     }
 }
 
@@ -1168,7 +1185,12 @@ nav a {
         max-width: 100%;
     }
     .seccion-juego .imagen-juego .degradado {
-        height: 60px; /* Degradado más corto */
+        height: 110%; /* Ocupa un poco más de la imagen */
+        background: linear-gradient(
+            to right,
+            rgba(63, 42, 146, 1) 0%,
+            rgba(63, 42, 146, 0.2) 100%
+        );
     }
 }
 
@@ -1200,7 +1222,12 @@ nav a {
         max-width: 100%;
     }
     .seccion-juego .imagen-juego .degradado {
-        height: 40px; /* Degradado más corto */
+        height: 115%; /* Ocupa un poco más de la imagen */
+        background: linear-gradient(
+            to right,
+            rgba(63, 42, 146, 1) 0%,
+            rgba(63, 42, 146, 0.2) 100%
+        );
     }
 }
 
@@ -1234,7 +1261,12 @@ nav a {
         font-size: 1rem;
     }
     .seccion-juego .imagen-juego .degradado {
-        height: 24px; /* Degradado más corto */
+        height: 120%; 
+        background: linear-gradient(
+            to right,
+            rgba(63, 42, 146, 1) 0%,
+            rgba(63, 42, 146, 0.2) 100%
+        );
     }
 }
 
