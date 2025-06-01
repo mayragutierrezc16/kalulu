@@ -105,33 +105,6 @@ nav a {
   border: 2px solid #44348E;
 }
 
-
-@media (max-width: 1024px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-    .download-btn {
-        margin-left: 0;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        order: 2;
-    }
-    nav {
-        flex-direction: row;
-        gap: 1rem;
-        width: auto;
-        justify-content: flex-start;
-        order: 1;
-    }
-    .logo {
-        order: 0;
-    }
-    
-}
-
 @media (max-width: 900px) {
     header .container {
         max-width: 100%;
@@ -628,22 +601,6 @@ nav a {
 
 .pregunta:hover {
     transform: scale(1.03);
-}
-
-@media (max-width: 1024px) {
-    .bloque-descubrir {
-        padding: 60px 20px;
-        margin-top: -30px;
-    }
-    .bloque-descubrir .contenedor {
-        max-width: 95vw;
-    }
-    .bloque-descubrir p {
-        width: 80%;
-    }
-    .preguntas {
-        gap: 30px 40px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1167,31 +1124,6 @@ nav a {
           rgba(63, 42, 146, 0.2) 120%
      );
      pointer-events: none;
-}
-
-@media (max-width: 1024px) {
-    .destacado {
-        font-size: 2.2rem;
-        width: 100%;
-    }
-    .seccion-juego .contenido-texto {
-        margin-left: 0;
-        max-width: 90vw;
-        padding: 1.5rem 0.5rem;
-        margin-top: 2rem; /* Más espacio arriba del texto */
-    }
-    .seccion-juego .imagen-juego {
-        min-height: 300px;
-        max-width: 100%;
-    }
-    .seccion-juego .imagen-juego .degradado {
-        height: 110%; /* Ocupa un poco más de la imagen */
-        background: linear-gradient(
-            to right,
-            rgba(63, 42, 146, 1) 0%,
-            rgba(63, 42, 146, 0.2) 100%
-        );
-    }
 }
 
 @media (max-width: 768px) {
