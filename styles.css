@@ -48,6 +48,13 @@ iframe {
     body {
         font-size: 1rem;
     }
+    .container,
+    .contenedor {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
 }
 
 header {
@@ -446,18 +453,21 @@ nav a {
         transform: none;
     }
     .bloque-importante .contenido {
-        padding: 40px 0;
+        padding: 40px 4vw;
         text-align: left;
         align-items: flex-start;
-        margin-left: 10px;
+        margin-left: 0;
+        width: 92vw;
+        max-width: 92vw;
+        box-sizing: border-box;
     }
     .bloque-importante .contenido h2 {
         font-size: 2.2rem;
     }
     .bloque-importante .imagen .degradado {
         width: 100%;
-        height: 40%; /* Cambia el degradado a la parte superior */
-        background: linear-gradient(to bottom, #3f2a92 60%, transparent 100%);
+        height: 20%;
+        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%);
         left: 0;
         top: 0;
     }
@@ -465,8 +475,11 @@ nav a {
 
 @media (max-width: 768px) {
     .bloque-importante .contenido {
-        padding: 30px 0;
-        margin-left: 10px;
+        padding: 30px 3vw;
+        margin-left: 0;
+        width: 94vw;
+        max-width: 94vw;
+        box-sizing: border-box;
     }
     .bloque-importante .contenido h2 {
         font-size: 1.6rem;
@@ -476,8 +489,8 @@ nav a {
     }
     .bloque-importante .imagen .degradado {
         width: 100%;
-        height: 40%;
-        background: linear-gradient(to bottom, #3f2a92 60%, transparent 100%);
+        height: 20%;
+        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%);
         left: 0;
         top: 0;
     }
@@ -485,8 +498,11 @@ nav a {
 
 @media (max-width: 480px) {
     .bloque-importante .contenido {
-        padding: 18px 0;
-        margin-left: 10px;
+        padding: 18px 2vw;
+        margin-left: 0;
+        width: 98vw;
+        max-width: 98vw;
+        box-sizing: border-box;
     }
     .bloque-importante .contenido h2 {
         font-size: 1.2rem;
@@ -496,8 +512,8 @@ nav a {
     }
     .bloque-importante .imagen .degradado {
         width: 100%;
-        height: 40%;
-        background: linear-gradient(to bottom, #3f2a92 60%, transparent 100%);
+        height: 20%;
+        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%);
         left: 0;
         top: 0;
     }
@@ -1109,7 +1125,6 @@ nav a {
     );
     pointer-events: none;
     z-index: 2;
-    /* visible solo en desktop, oculto en mobile por media query */
 }
 @media (max-width: 768px) {
     .destacado {
@@ -1128,26 +1143,25 @@ nav a {
        margin-left: 0;
        max-width: 100%;
        padding: 1rem 0.5rem;
-       margin-top: 2.5rem; /* Más espacio arriba del texto */
+       margin-top: 2.5rem;
     }
     .seccion-juego h2 {
        font-size: 1.5rem;
     }
     .seccion-juego .imagen-juego {
-       order: 2; /* Foto abajo */
+       order: 2; 
        min-height: 200px;
        max-width: 100%;
     }
     .seccion-juego .imagen-juego .degradado {
-       height: 70%; /* Más corto en mobile */
+       height: 20%; 
        background: linear-gradient(
           to bottom,
-          rgba(63, 42, 146, 1) 0%,
+          rgba(63, 42, 146, 1) 10%,
           rgba(63, 42, 146, 0.2) 100%
        );
     }
     .seccion-juego .imagen-juego .degradado-2 {
-       /* Solo degradado arriba en mobile, ocultar el lateral */
        display: none;
     }
 }
@@ -1182,10 +1196,10 @@ nav a {
        font-size: 1rem;
     }
     .seccion-juego .imagen-juego .degradado {
-       height: 45%; /* Más corto aún en pantallas muy pequeñas */
+       height: 20%; /* Más corto aún en pantallas muy pequeñas */
        background: linear-gradient(
           to bottom,
-          rgba(63, 42, 146, 1) 0%,
+          rgba(63, 42, 146, 1) 10%,
           rgba(63, 42, 146, 0.2) 100%
        );
     }
