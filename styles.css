@@ -951,7 +951,6 @@ nav a {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-left: 120px;
      flex-wrap: wrap;  
      width: 100%;
      box-sizing: border-box;
@@ -1074,161 +1073,185 @@ nav a {
 }
 
 .seccion-juego {
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: center;
-     background-color: #3f2a92;
-     color: #fff;
-     width: 100%;
-     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f2a92;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .seccion-juego .contenido-texto {
-     flex: 1 1 300px;
-     max-width: 500px;
-     text-align: left;
-     margin-left: 50px;
-     padding: 2rem 1rem;
-     box-sizing: border-box;
+    flex: 1 1 300px;
+    max-width: 500px;
+    text-align: left;
+    margin-left: 50px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
 }
 
 .seccion-juego h2 {
-     font-size: 2.5rem;
-     font-weight: 300;
-     margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
 }
 
 .seccion-juego p {
-     margin: 0.5rem 0;
-     font-size: 1rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
 }
 
 .seccion-juego p strong {
-     margin: 0.5rem 0;
-     font-size: 1.5rem;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
 }
 
 .seccion-juego .btn-jugar {
-     display: inline-block;
-     margin-top: 1rem;
-     padding: 0.7rem 1.5rem;
-     background-color: #fff;
-     color: #3f2a92;
-     font-weight: bold;
-     border-radius: 30px;
-     text-decoration: none;
-     transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #fff;
+    color: #3f2a92;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .seccion-juego .btn-jugar:hover {
-     background-color: #ddd;
+    background-color: #ddd;
 }
 
 .seccion-juego .imagen-juego {
-     position: relative;
-     flex: 1 1 50%;
-     min-height: 400px;
-     overflow: hidden;
-     width: 100%;
-     max-width: 700px;
-     box-sizing: border-box;
+    position: relative;
+    flex: 1 1 50%;
+    min-height: 400px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
 }
 
 .seccion-juego .imagen-juego img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .seccion-juego .imagen-juego .degradado {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: linear-gradient(
-          to right,
-          rgba(63, 42, 146, 1) 0%,
-          rgba(63, 42, 146, 0.2) 120%
-     );
-     pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(63, 42, 146, 1) 0%,
+        rgba(63, 42, 146, 0.2) 50%
+    );
+    pointer-events: none;
+    z-index: 2;
+}
+
+.seccion-juego .imagen-juego .degradado-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to left,
+        rgba(63, 42, 146, 1) 0%,
+        rgba(63, 42, 146, 0.2) 20%
+    );
+    pointer-events: none;
+    z-index: 2;
+    /* visible solo en desktop, oculto en mobile por media query */
 }
 
 @media (max-width: 768px) {
     .destacado {
-        font-size: 1.6rem;
+       font-size: 1.6rem;
     }
     .texto {
-        font-size: 1.1rem;
+       font-size: 1.1rem;
     }
     .seccion-juego {
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
+       flex-direction: column;
+       text-align: center;
+       padding: 0;
     }
     .seccion-juego .contenido-texto {
-        text-align: center;
-        margin-left: 0;
-        max-width: 100%;
-        padding: 1rem 0.5rem;
-        margin-top: 2.5rem; /* Más espacio arriba del texto */
+       text-align: center;
+       margin-left: 0;
+       max-width: 100%;
+       padding: 1rem 0.5rem;
+       margin-top: 2.5rem; /* Más espacio arriba del texto */
     }
     .seccion-juego h2 {
-        font-size: 1.5rem;
+       font-size: 1.5rem;
     }
     .seccion-juego .imagen-juego {
-        order: 2; /* Foto abajo */
-        min-height: 200px;
-        max-width: 100%;
+       order: 2; /* Foto abajo */
+       min-height: 200px;
+       max-width: 100%;
     }
     .seccion-juego .imagen-juego .degradado {
-        height: 115%; /* Ocupa un poco más de la imagen */
-        background: linear-gradient(
-            to right,
-            rgba(63, 42, 146, 1) 0%,
-            rgba(63, 42, 146, 0.2) 100%
-        );
+       height: 115%; /* Ocupa un poco más de la imagen */
+       background: linear-gradient(
+          to bottom,
+          rgba(63, 42, 146, 1) 0%,
+          rgba(63, 42, 146, 0.2) 100%
+       );
+    }
+    .seccion-juego .imagen-juego .degradado-2 {
+       /* Solo degradado arriba en mobile, ocultar el lateral */
+       display: none;
     }
 }
 
 @media (max-width: 480px) {
     .separador {
-        width: 95%;
-        max-width: 200px;
+       width: 95%;
+       max-width: 200px;
     }
     .destacado {
-        font-size: 1.1rem;
-        width: 100%;
+       font-size: 1.1rem;
+       width: 100%;
     }
     .texto {
-        font-size: 0.95rem;
+       font-size: 0.95rem;
     }
     .seccion-juego .contenido-texto {
-        padding: 0.5rem 0.2rem;
-        font-size: 0.95rem;
-        margin-top: 2.5rem; /* Más espacio arriba del texto */
+       padding: 0.5rem 0.2rem;
+       font-size: 0.95rem;
+       margin-top: 2.5rem; /* Más espacio arriba del texto */
     }
     .seccion-juego h2 {
-        font-size: 1.1rem;
+       font-size: 1.1rem;
     }
     .seccion-juego .imagen-juego {
-        order: 2; /* Foto abajo */
-        min-height: 120px;
+       order: 2; /* Foto abajo */
+       min-height: 120px;
     }
     .seccion-juego .btn-jugar {
-        width: 100%;
-        padding: 0.6rem 0;
-        font-size: 1rem;
+       width: 100%;
+       padding: 0.6rem 0;
+       font-size: 1rem;
     }
     .seccion-juego .imagen-juego .degradado {
-        height: 120%; 
-        background: linear-gradient(
-            to right,
-            rgba(63, 42, 146, 1) 0%,
-            rgba(63, 42, 146, 0.2) 100%
-        );
+       height: 120%; 
+       background: linear-gradient(
+          to bottom,
+          rgba(63, 42, 146, 1) 0%,
+          rgba(63, 42, 146, 0.2) 100%
+       );
+    }
+    .seccion-juego .imagen-juego .degradado-2 {
+       display: none;
     }
 }
 
