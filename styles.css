@@ -1154,12 +1154,11 @@ nav a {
        max-width: 100%;
     }
     .seccion-juego .imagen-juego .degradado {
-       height: 20%; 
-       background: linear-gradient(
-          to bottom,
-          rgba(63, 42, 146, 1) 0%,
-          rgba(63, 42, 146, 0.2) 100%
-       );
+        width: 100%;
+        height: 20%;
+        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%);
+        left: 0;
+        top: 0;
     }
     .seccion-juego .imagen-juego .degradado-2 {
        display: none;
@@ -1196,12 +1195,11 @@ nav a {
        font-size: 1rem;
     }
     .seccion-juego .imagen-juego .degradado {
-       height: 20%; /* Más corto aún en pantallas muy pequeñas */
-       background: linear-gradient(
-          to bottom,
-          rgba(63, 42, 146, 1) 0%,
-          rgba(63, 42, 146, 0.2) 100%
-       );
+        width: 100%;
+        height: 20%;
+        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%);
+        left: 0;
+        top: 0;
     }
     .seccion-juego .imagen-juego .degradado-2 {
        display: none;
