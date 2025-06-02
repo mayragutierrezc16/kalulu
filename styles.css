@@ -1157,7 +1157,7 @@ nav a {
        height: 20%; 
        background: linear-gradient(
           to bottom,
-          rgba(63, 42, 146, 1) 10%,
+          rgba(63, 42, 146, 1) 0%,
           rgba(63, 42, 146, 0.2) 100%
        );
     }
@@ -1199,7 +1199,7 @@ nav a {
        height: 20%; /* Más corto aún en pantallas muy pequeñas */
        background: linear-gradient(
           to bottom,
-          rgba(63, 42, 146, 1) 10%,
+          rgba(63, 42, 146, 1) 0%,
           rgba(63, 42, 146, 0.2) 100%
        );
     }
