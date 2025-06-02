@@ -1384,6 +1384,7 @@ button:hover {
     .formulario {
         margin-left: 40px;
         padding: 2rem 0.5rem;
+        max-width: 90vw;
     }
     .formulario h2 {
         font-size: 2rem;
@@ -1394,7 +1395,7 @@ button:hover {
     .formulario {
         margin-left: 0;
         padding: 1rem 0.2rem;
-        max-width: 95vw;
+        max-width: 85vw;
         margin-right: auto;
         margin-left: auto;
     }
@@ -1410,7 +1411,7 @@ button:hover {
 
 @media (max-width: 400px) {
     .formulario {
-        max-width: 98vw;
+        max-width: 96vw;
         padding: 0.5rem 0.1rem;
     }
     .formulario h2 {
