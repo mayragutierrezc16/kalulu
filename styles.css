@@ -1305,108 +1305,115 @@ nav a {
 }
 
 .formulario {
-     max-width: 600px;
-     margin: 0 auto;
-     padding: 2rem 1rem;
-     color: #2e2e2e;
-     font-family: 'Roboto', sans-serif;
-     width: 100%;
-     box-sizing: border-box;
-     margin-left: 150px; /* Separación lateral en desktop */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    color: #2e2e2e;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 150px; /* Separación lateral en desktop */
 }
 
 .formulario h2 {
-     font-size: 2.5rem;
-     margin-bottom: 1rem;
-     font-weight: 300;
-     color: #3f2a92;
-     text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: #3f2a92;
+    text-align: left;
 }
 
 form {
-     display: flex;
-     flex-direction: column;
-     gap: 1.2rem;
-     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
 }
 
 label {
-     font-weight: 500;
-     margin-bottom: 0.2rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
 }
 
 .requerido {
-     color: red;
+    color: red;
 }
 
 input,
 select,
 textarea {
-     padding: 0.6rem;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     font-size: 1rem;
-     font-family: inherit;
-     width: 100%;
-     box-sizing: border-box;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
-     align-self: flex-start;
-     background-color: #4e32a8;
-     color: white;
-     border: none;
-     padding: 0.6rem 1.5rem;
-     border-radius: 30px;
-     font-size: 1rem;
-     cursor: pointer;
-     transition: background-color 0.3s ease;
-     font-family: 'Roboto', sans-serif;
+    align-self: flex-start;
+    background-color: #4e32a8;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
 }
 
 button:hover {
-     background-color: #3a2483;
+    background-color: #3a2483;
 }
 
 @media (max-width: 900px) {
-     .formulario {
-          margin-left: 40px;
-          padding: 2rem 0.5rem;
-     }
-     .formulario h2 {
-          font-size: 2rem;
-     }
+    .formulario {
+        margin-left: 40px;
+        padding: 2rem 0.5rem;
+    }
+    .formulario h2 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 600px) {
-     .formulario {
-          margin-left: 0;
-          padding: 1rem 0.2rem;
-          max-width: 100%;
-     }
-     .formulario h2 {
-          font-size: 1.3rem;
-     }
-     button {
-          width: 100%;
-          align-self: stretch;
-     }
+    .formulario {
+        margin-left: 0;
+        padding: 1rem 0.2rem;
+        max-width: 95vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .formulario h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    button {
+        width: 100%;
+        align-self: stretch;
+    }
 }
 
 @media (max-width: 400px) {
-     .formulario h2 {
-          font-size: 1rem;
-     }
-     input,
-     select,
-     textarea {
-          font-size: 0.95rem;
-          padding: 0.5rem;
-     }
-     button {
-          font-size: 0.95rem;
-          padding: 0.5rem 1rem;
-     }
+    .formulario {
+        max-width: 98vw;
+        padding: 0.5rem 0.1rem;
+    }
+    .formulario h2 {
+        font-size: 1rem;
+    }
+    input,
+    select,
+    textarea {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+    button {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+    }
 }
 
 .footer {
