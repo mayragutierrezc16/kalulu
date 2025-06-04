@@ -1,646 +1,654 @@
+/* Importa las fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Fuente principal para todo el sitio */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Fuente principal para el texto */
 }
 
+/* Reset de márgenes, paddings y box-sizing para todos los elementos */
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina relleno por defecto */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
 }
 
+/* Ajustes generales del html */
 html {
-    width: 100%;
-    min-height: 100%;
-    scroll-behavior: smooth;
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    min-height: 100%; /* Altura mínima igual al 100% */
+    scroll-behavior: smooth; /* Desplazamiento suave al navegar */
 }
 
+/* Ajustes generales del body */
 body {
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;
+    width: 100%; /* Ocupa todo el ancho */
+    min-height: 100vh; /* Altura mínima igual a la ventana */
+    overflow-x: hidden; /* Oculta el scroll horizontal */
 }
 
+/* Hace que imágenes, videos e iframes sean responsive */
 img,
 video,
 iframe {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    max-width: 100%; /* No exceden el ancho del contenedor */
+    height: auto; /* Mantienen proporción */
+    display: block; /* Se muestran como bloques */
 }
 
+/* Contenedores principales para centrar contenido y limitar ancho */
 .container,
 .contenedor {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding-left: 1rem; /* Espaciado interno izquierdo */
+    padding-right: 1rem; /* Espaciado interno derecho */
 }
 
+/* Media query para pantallas pequeñas */
 @media (max-width: 480px) {
     html {
-        font-size: 15px;
+        font-size: 15px; /* Reduce el tamaño base de fuente */
     }
     body {
-        font-size: 1rem;
+        font-size: 1rem; /* Ajusta el tamaño de fuente */
     }
     .container,
     .contenedor {
-        max-width: 100%;
-        width: 100%;
-        padding-left: 0.2rem;
-        padding-right: 0.2rem;
+        max-width: 100%; /* Ancho máximo igual al de la pantalla */
+        width: 100%; /* Ocupa todo el ancho */
+        padding-left: 0.2rem; /* Menos espacio a la izquierda */
+        padding-right: 0.2rem; /* Menos espacio a la derecha */
     }
 }
 
+/* Header */
 header {
-  position: fixed; /* Mantiene el header fijo arriba */
-  top: 0;
-  width: 100%;
-  background-color: #F3F5F9;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  position: fixed; /* Fija el header */
+  top: 0; /* Arriba de la página */
+  width: 100%; /* Ocupa todo el ancho */
+  background-color: #fff; /* Color de fondo  */
+  z-index: 1000; /* Encima de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 header .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    padding: 0.5rem 1rem; /* Espaciado interno arriba/abajo y lados */
+    display: flex; /* Usa flexbox para alinear hijos */
+    align-items: center; /* Centra verticalmente los hijos */
+    flex-wrap: wrap; /* Permite que los hijos se envuelvan en varias líneas */
+    gap: 1rem; /* Espacio entre los hijos */
 }
 
 .logo {
-  height: 50px; /* Logo del header */
+    height: 50px; /* Altura del logo */
 }
 
 nav {
-  display: flex;
-  gap: 2rem; /* Espacio entre links */
+    display: flex; /* Flexbox para los enlaces de navegación */
+    gap: 2rem; /* Espacio entre los enlaces */
 }
 
 nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: 300; 
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: black; /* Color del texto */
+    font-weight: 300; /* Grosor de la fuente */
 }
 
 .download-btn {
-  background-color: #44348E;
-  color: white;
-  border: none;
-  padding: 0.6rem 1rem;
-  font-weight: bold;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-left: 200px; 
+    background-color: #44348E; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 0.6rem 1rem; /* Espaciado interno */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 20px; /* Bordes redondeados */
+    display: flex; /* Flexbox para alinear contenido interno */
+    align-items: center; /* Centra verticalmente el contenido */
+    gap: 1rem; /* Espacio entre icono y texto */
+    cursor: pointer; /* Cursor tipo mano al pasar */
+    transition: all 0.3s ease; /* Transición suave en hover */
+    margin-left: 200px; /* Separación izquierda */
 }
 
 .download-btn:hover {
-  background-color: white;
-  color: #44348E;
-  border: 2px solid #44348E;
+    background-color: white; /* Color de fondo al pasar mouse */
+    color: #44348E; /* color del texto al pasar mouse */
+    border: 2px solid #44348E; /* color del borde al pasar mouse */
 }
 
 @media (max-width: 900px) {
-    header .container {
-        max-width: 100%;
-        padding: 0.5rem 0.5rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-    .download-btn {
-        margin-left: 0;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        order: 2;
-    }
-    nav {
-        width: auto;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 1rem;
-        order: 1;
-    }
-    .logo {
-        order: 0;
-    }
+        header .container {
+                max-width: 100%; /* Ancho completo */
+                padding: 0.5rem 0.5rem; /* Menos padding */
+                flex-direction: column; /* Apila los hijos verticalmente */
+                align-items: flex-start; /* Alinea a la izquierda */
+                gap: 0.5rem; /* Menor espacio entre hijos */
+        }
+        .download-btn {
+                margin-left: 0; /* Sin margen izquierdo */
+                width: 100%; /* Ocupa todo el ancho */
+                justify-content: center; /* Centra el contenido */
+                display: flex; /* Flexbox */
+                order: 2; /* Ordena después de nav */
+        }
+        nav {
+                width: auto; /* Ancho automático */
+                justify-content: flex-start; /* Alinea a la izquierda */
+                flex-direction: row; /* Enlaces en fila */
+                gap: 1rem; /* Espacio entre enlaces */
+                order: 1; /* Ordena después del logo */
+        }
+        .logo {
+                order: 0; /* Logo primero */
+        }
 }
 
 @media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.3rem;
-    }
-    .logo {
-        height: 40px;
-        margin-bottom: 0;
-        order: 0;
-    }
-    nav {
-        flex-direction: row;
-        gap: 1rem;
-        width: auto;
-        justify-content: flex-start;
-        order: 1;
-    }
-    .download-btn {
-        align-self: stretch;
-        margin-left: 0;
-        margin-top: 0.5rem;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        order: 2;
-    }
+        header .container {
+                flex-direction: column; /* Apila verticalmente */
+                align-items: flex-start; /* Alinea a la izquierda */
+                gap: 0.3rem; /* Menor espacio */
+        }
+        .logo {
+                height: 40px; /* Logo más pequeño */
+                margin-bottom: 0; /* Sin margen inferior */
+                order: 0; /* Primero */
+        }
+        nav {
+                flex-direction: row; /* Enlaces en fila */
+                gap: 1rem; /* Espacio entre enlaces */
+                width: auto; /* Ancho automático */
+                justify-content: flex-start; /* Alinea a la izquierda */
+                order: 1; /* Segundo */
+        }
+        .download-btn {
+                align-self: stretch; /* Ocupa todo el ancho disponible */
+                margin-left: 0; /* Sin margen izquierdo */
+                margin-top: 0.5rem; /* Margen superior */
+                width: 100%; /* Ancho completo */
+                justify-content: center; /* Centra el contenido */
+                display: flex; /* Flexbox */
+                order: 2; /* Tercero */
+        }
 }
 
 @media (max-width: 480px) {
-    header .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.3rem 0.2rem;
-        gap: 0.3rem;
-    }
-    .logo {
-        height: 32px;
-        order: 0;
-        flex: 0 0 auto;
-    }
-    nav {
-        order: 1;
-        flex: 1 1 auto;
-        display: flex;
-        gap: 0.7rem;
-        justify-content: flex-start;
-    }
-    nav a {
-        font-size: 0.95rem;
-    }
-    .download-btn {
-        font-size: 0.95rem;
-        padding: 0.5rem 0.7rem;
-        width: 100%;
-        justify-content: center;
-        order: 2;
-        margin-left: 0;
-        margin-top: 0.5rem;
-        flex-basis: 100%;
-    }
+        header .container {
+                flex-direction: row; /* Elementos en fila */
+                flex-wrap: wrap; /* Permite envolver */
+                align-items: center; /* Centra verticalmente */
+                justify-content: space-between; /* Espacia entre extremos */
+                padding: 0.3rem 0.2rem; /* Menos padding */
+                gap: 0.3rem; /* Menor espacio */
+        }
+        .logo {
+                height: 32px; /* Logo más pequeño */
+                order: 0; /* Primero */
+                flex: 0 0 auto; /* No se estira */
+        }
+        nav {
+                order: 1; /* Segundo */
+                flex: 1 1 auto; /* Se estira */
+                display: flex; /* Flexbox */
+                gap: 0.7rem; /* Menor espacio entre enlaces */
+                justify-content: flex-start; /* Alinea a la izquierda */
+        }
+        nav a {
+                font-size: 0.95rem; /* Texto más pequeño */
+        }
+        .download-btn {
+                font-size: 0.95rem; /* Texto más pequeño */
+                padding: 0.5rem 0.7rem; /* Menos padding */
+                width: 100%; /* Ancho completo */
+                justify-content: center; /* Centra el contenido */
+                order: 2; /* Tercero */
+                margin-left: 0; /* Sin margen izquierdo */
+                margin-top: 0.5rem; /* Margen superior */
+                flex-basis: 100%; /* Ocupa toda la fila */
+        }
 }
 
     /* Hero */
     .hero {
-        background: linear-gradient(rgba(74, 0, 115, 0.45), rgba(74, 0, 115, 0.45)),
-                                url('imagenes/imagen\ \(2\).jpg') no-repeat center center/cover;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding-left: 5%;
-        width: 100%;
+        background: linear-gradient(rgba(74, 0, 115, 0.45), rgba(74, 0, 115, 0.45)), /* Degradado oscuro encima de la imagen */
+                                url('imagenes/imagen\ \(2\).jpg') no-repeat center center/cover; /* Imagen de fondo centrada y cubierta */
+        min-height: 100vh; /* Altura mínima igual a la ventana */
+        display: flex; /* Flexbox para alinear contenido */
+        align-items: center; /* Centra verticalmente */
+        justify-content: flex-start; /* Alinea a la izquierda */
+        padding-left: 5%; /* Espacio a la izquierda */
+        width: 100%; /* Ocupa todo el ancho */
     }
 
     .contenido {
-        max-width: 700px;
-        width: 100%;
-        text-align: left;
-        color: #fff;
-        padding: 2rem 1rem;
-        box-sizing: border-box;
+        max-width: 700px; /* Ancho máximo del contenido */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: left; /* Texto alineado a la izquierda */
+        color: #fff; /* Texto blanco */
+        padding: 2rem 1rem; /* Espaciado interno */
+        box-sizing: border-box; /* Incluye padding en el ancho */
     }
 
     .contenido h1 {
-        font-size: 3rem;
-        font-weight: 300;
-        line-height: 1.1;
+        font-size: 3rem; /* Tamaño grande de título */
+        font-weight: 300; /* Peso de fuente ligero */
+        line-height: 1.1; /* Espaciado entre líneas */
     }
 
     .contenido h1 .bold {
-        font-weight: 500;
+        font-weight: 500; /* Peso de fuente más grueso para resaltar */
     }
 
     .contenido p {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        font-weight: 250;
-        line-height: 1.4;
+        margin-top: 1rem; /* Espacio arriba del párrafo */
+        font-size: 1.5rem; /* Tamaño de fuente grande */
+        font-weight: 250; /* Peso de fuente ligero */
+        line-height: 1.4; /* Espaciado entre líneas */
     }
 
     .btn {
-        display: inline-block;
-        margin-top: 2rem;
-        background-color: #4B2A9B;
-        color: #fff;
-        font-weight: bold;
-        padding: 0.75rem 1.5rem;
-        border-radius: 8px;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-        font-size: 1.2rem;
+        display: inline-block; /* Botón en línea pero con propiedades de bloque */
+        margin-top: 2rem; /* Espacio arriba del botón */
+        background-color: #4B2A9B; /* Color de fondo */
+        color: #fff; /* Texto blanco */
+        font-weight: bold; /* Texto en negrita */
+        padding: 0.75rem 1.5rem; /* Espaciado interno */
+        border-radius: 8px; /* Bordes redondeados */
+        text-decoration: none; /* Sin subrayado */
+        transition: background-color 0.3s ease; /* Transición suave al cambiar color */
+        font-size: 1.2rem; /* Tamaño de fuente */
     }
 
     .btn:hover {
-        background-color: #361e6b;
+        background-color: #361e6b; /* Color de fondo al pasar mouse */
     }
 
     @media (max-width: 900px) {
         .hero {
-            padding-left: 2%;
-            min-height: 70vh;
+            padding-left: 2%; /* Menos espacio a la izquierda */
+            min-height: 70vh; /* Menor altura mínima */
         }
         .contenido {
-            max-width: 90vw;
-            padding: 1.5rem 1rem;
+            max-width: 90vw; /* Ancho máximo relativo a la ventana */
+            padding: 1.5rem 1rem; /* Menos padding */
         }
         .contenido h1 {
-            font-size: 2.2rem;
+            font-size: 2.2rem; /* Título más pequeño */
         }
         .contenido p {
-            font-size: 1.1rem;
+            font-size: 1.1rem; /* Texto más pequeño */
         }
         .btn {
-            font-size: 1rem;
-            padding: 0.6rem 1.2rem;
+            font-size: 1rem; /* Botón más pequeño */
+            padding: 0.6rem 1.2rem; /* Menos padding */
         }
     }
 
     @media (max-width: 600px) {
         .hero {
-            padding-left: 0;
-            justify-content: center;
-            min-height: 60vh;
+            padding-left: 0; /* Sin padding izquierdo */
+            justify-content: center; /* Centra el contenido */
+            min-height: 60vh; /* Altura mínima menor */
         }
         .contenido {
-            padding: 1rem 0.5rem;
-            text-align: center;
+            padding: 1rem 0.5rem; /* Menos padding */
+            text-align: center; /* Centra el texto */
         }
         .contenido h1 {
-            font-size: 1.5rem;
+            font-size: 1.5rem; /* Título más pequeño */
         }
         .contenido p {
-            font-size: 0.95rem;
+            font-size: 0.95rem; /* Texto más pequeño */
         }
         .btn {
-            width: 100%;
-            padding: 0.6rem 0;
-            font-size: 1rem;
-            margin-top: 1.2rem;
+            width: 100%; /* Botón ocupa todo el ancho */
+            padding: 0.6rem 0; /* Menos padding lateral */
+            font-size: 1rem; /* Tamaño de fuente menor */
+            margin-top: 1.2rem; /* Menos espacio arriba */
         }
     }
 
     .video {
-        padding: 2rem 0;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        box-sizing: border-box;
+        padding: 2rem 0; /* Espaciado arriba y abajo del bloque de video */
+        display: flex; /* Flexbox para centrar el contenido */
+        justify-content: center; /* Centra horizontalmente */
+        width: 100%; /* Ocupa todo el ancho */
+        box-sizing: border-box; /* Incluye padding/border en el ancho */
     }
 
     .video-container {
-        position: relative;
-        width: 100%;
-        max-width: 800px;
-        aspect-ratio: 16 / 9;
-        margin: 0 auto;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #000; 
+        position: relative; /* Para posicionar el iframe absolutamente */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: 800px; /* Ancho máximo del video */
+        aspect-ratio: 16 / 9; /* Mantiene proporción 16:9 */
+        margin: 0 auto; /* Centra horizontalmente */
+        overflow: hidden; /* Oculta desbordes */
+        display: flex; /* Flexbox para centrar el iframe */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        background: #000; /* Fondo negro detrás del video */
     }
 
     .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
+        position: absolute; /* Posiciona el iframe sobre el contenedor */
+        top: 0; /* Arriba */
+        left: 0; /* Izquierda */
+        width: 100%; /* Ocupa todo el ancho */
+        height: 100%; /* Ocupa toda la altura */
+        border: none; /* Sin borde */
     }
 
     @media (max-width: 900px) {
         .video-container {
-            max-width: 100%;
-            width: 100%;
+            max-width: 100%; /* Ancho máximo igual al contenedor */
+            width: 100%; /* Ocupa todo el ancho */
         }
     }
 
     @media (max-width: 600px) {
         .video {
-            padding: 1rem 0;
+            padding: 1rem 0; /* Menos espacio arriba y abajo */
         }
         .video-container {
-            width: 100%;
-            max-width: 100%;
-            aspect-ratio: 16 / 9;
+            width: 100%; /* Ocupa todo el ancho */
+            max-width: 100%; /* Sin límite de ancho */
+            aspect-ratio: 16 / 9; /* Mantiene proporción */
         }
     }
 
 .bloque-importante {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    min-height: 400px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    background: #3f2a92;
-    color: #fff;
-    position: relative;
-    padding: 0;
-
+    display: flex; /* Flexbox para dividir en dos columnas */
+    flex-wrap: wrap; /* Permite envolver en varias líneas */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    min-height: 400px; /* Altura mínima */
+    margin-left: 50%; /* Centra usando transform */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    background: #3f2a92; /* Fondo violeta */
+    color: #fff; /* Texto blanco */
+    position: relative; /* Para posicionar hijos relativos */
+    padding: 0; /* Sin padding */
 }
 
 .bloque-importante .contenido {
-    flex: 1 1 50%;
-    padding: 60px 40px;
-    background: #3f2a92;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;
-    width: 50%;
-    max-width: 50vw;
-    margin: 0;
-    box-sizing: border-box;
-    position: relative;
-    left: 0;
-    transform: none;
-    z-index: 2;
+    flex: 1 1 50%; /* Ocupa la mitad del espacio */
+    padding: 60px 40px; /* Espaciado interno */
+    background: #3f2a92; /* Fondo violeta */
+    color: #fff; /* Texto blanco */
+    display: flex; /* Flexbox para alinear contenido */
+    flex-direction: column; /* Apila verticalmente */
+    justify-content: center; /* Centra verticalmente */
+    align-items: flex-start; /* Alinea a la izquierda */
+    text-align: left; /* Texto alineado a la izquierda */
+    width: 50%; /* Ocupa la mitad del ancho */
+    max-width: 50vw; /* Máximo la mitad de la ventana */
+    margin: 0; /* Sin margen */
+    box-sizing: border-box; /* Incluye padding/border en el ancho */
+    position: relative; /* Para posicionar hijos relativos */
+    left: 0; /* Sin desplazamiento */
+    transform: none; /* Sin transformación extra */
+    z-index: 2; /* Encima de la imagen */
 }
 
 .bloque-importante .contenido h2 {
-    font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 20px;
+    font-size: 3rem; /* Tamaño grande de título */
+    font-weight: 300; /* Peso de fuente ligero */
+    margin-bottom: 20px; /* Espacio debajo */
 }
 
 .bloque-importante .contenido h3 {
-    margin-top: 30px;
-    font-size: 1.5rem;
-    color: #fff;
+    margin-top: 30px; /* Espacio arriba */
+    font-size: 1.5rem; /* Tamaño de subtítulo */
+    color: #fff; /* Texto blanco */
 }
 
 .bloque-importante .contenido p {
-    margin-bottom: 15px;
-    line-height: 1.6;
+    margin-bottom: 15px; /* Espacio debajo */
+    line-height: 1.6; /* Espaciado entre líneas */
 }
 
 .bloque-importante .imagen {
-    flex: 1 1 50%;
-    width: 50%;
-    max-width: 50vw;
-    min-width: 0;
-    min-height: 400px;
-    position: relative;
-    left: 0;
-    transform: none;
-    overflow: hidden;
-    margin: 0;
-    z-index: 1;
-    display: flex;
-    align-items: stretch;
+    flex: 1 1 50%; /* Ocupa la mitad del espacio */
+    width: 50%; /* Ocupa la mitad del ancho */
+    max-width: 50vw; /* Máximo la mitad de la ventana */
+    min-width: 0; /* Sin ancho mínimo */
+    min-height: 400px; /* Altura mínima */
+    position: relative; /* Para degradado absoluto */
+    left: 0; /* Sin desplazamiento */
+    transform: none; /* Sin transformación extra */
+    overflow: hidden; /* Oculta desbordes */
+    margin: 0; /* Sin margen */
+    z-index: 1; /* Detrás del contenido */
+    display: flex; /* Flexbox para estirar imagen */
+    align-items: stretch; /* Estira verticalmente */
 }
 
 .bloque-importante .imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa toda la altura */
+    object-fit: cover; /* Cubre el contenedor */
+    display: block; /* Muestra como bloque */
 }
 
 .bloque-importante .imagen .degradado {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #3f2a92 20%, transparent 100%);
-    z-index: 2;
-    pointer-events: none;
+    position: absolute; /* Posiciona sobre la imagen */
+    top: 0; /* Arriba */
+    left: 0; /* Izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa toda la altura */
+    background: linear-gradient(to right, #3f2a92 20%, transparent 100%); /* Degradado violeta a transparente */
+    z-index: 2; /* Encima de la imagen */
+    pointer-events: none; /* No bloquea clics */
 }
 
 @media (max-width: 900px) {
     .bloque-importante {
-        flex-direction: column;
-        width: 100vw;
-        min-height: unset;
-        margin-left: 0;
-        transform: none;
+        flex-direction: column; /* Apila verticalmente */
+        width: 100vw; /* Ocupa todo el ancho */
+        min-height: unset; /* Sin altura mínima */
+        margin-left: 0; /* Sin margen izquierdo */
+        transform: none; /* Sin transformación */
     }
     .bloque-importante .contenido,
     .bloque-importante .imagen {
-        width: 100vw;
-        max-width: 100vw;
-        left: 0;
-        transform: none;
+        width: 100vw; /* Ocupa todo el ancho */
+        max-width: 100vw; /* Máximo todo el ancho */
+        left: 0; /* Sin desplazamiento */
+        transform: none; /* Sin transformación */
     }
     .bloque-importante .contenido {
-        padding: 40px 4vw;
-        text-align: left;
-        align-items: flex-start;
-        margin-left: 0;
-        width: 92vw;
-        max-width: 92vw;
-        box-sizing: border-box;
+        padding: 40px 4vw; /* Menos padding */
+        text-align: left; /* Texto a la izquierda */
+        align-items: flex-start; /* Alinea a la izquierda */
+        margin-left: 0; /* Sin margen izquierdo */
+        width: 92vw; /* 92% del ancho de la ventana */
+        max-width: 92vw; /* Máximo 92vw */
+        box-sizing: border-box; /* Incluye padding/border */
     }
     .bloque-importante .contenido h2 {
-        font-size: 2.2rem;
+        font-size: 2.2rem; /* Título más pequeño */
     }
     .bloque-importante .imagen .degradado {
-        width: 100%;
-        height: 20%;
-        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%);
-        left: 0;
-        top: 0;
+        width: 100%; /* Ocupa todo el ancho */
+        height: 20%; /* Solo parte superior */
+        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%); /* Degradado vertical */
+        left: 0; /* Sin desplazamiento */
+        top: 0; /* Arriba */
     }
 }
 
 @media (max-width: 768px) {
     .bloque-importante .contenido {
-        padding: 30px 3vw;
-        margin-left: 0;
-        width: 94vw;
-        max-width: 94vw;
-        box-sizing: border-box;
+        padding: 30px 3vw; /* Menos padding */
+        margin-left: 0; /* Sin margen izquierdo */
+        width: 94vw; /* 94% del ancho de la ventana */
+        max-width: 94vw; /* Máximo 94vw */
+        box-sizing: border-box; /* Incluye padding/border */
     }
     .bloque-importante .contenido h2 {
-        font-size: 1.6rem;
+        font-size: 1.6rem; /* Título más pequeño */
     }
     .bloque-importante .imagen {
-        min-height: 200px;
+        min-height: 200px; /* Menor altura mínima */
     }
     .bloque-importante .imagen .degradado {
-        width: 100%;
-        height: 20%;
-        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%);
-        left: 0;
-        top: 0;
+        width: 100%; /* Ocupa todo el ancho */
+        height: 20%; /* Solo parte superior */
+        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%); /* Degradado vertical */
+        left: 0; /* Sin desplazamiento */
+        top: 0; /* Arriba */
     }
 }
 
 @media (max-width: 480px) {
     .bloque-importante .contenido {
-        padding: 18px 2vw;
-        margin-left: 0;
-        width: 98vw;
-        max-width: 98vw;
-        box-sizing: border-box;
+        padding: 18px 2vw; /* Menos padding */
+        margin-left: 0; /* Sin margen izquierdo */
+        width: 98vw; /* 98% del ancho de la ventana */
+        max-width: 98vw; /* Máximo 98vw */
+        box-sizing: border-box; /* Incluye padding/border */
     }
     .bloque-importante .contenido h2 {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Título más pequeño */
     }
     .bloque-importante .imagen {
-        min-height: 120px;
+        min-height: 120px; /* Menor altura mínima */
     }
     .bloque-importante .imagen .degradado {
-        width: 100%;
-        height: 20%;
-        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%);
-        left: 0;
-        top: 0;
+        width: 100%; /* Ocupa todo el ancho */
+        height: 20%; /* Solo parte superior */
+        background: linear-gradient(to bottom, #3f2a92 10%, transparent 100%); /* Degradado vertical */
+        left: 0; /* Sin desplazamiento */
+        top: 0; /* Arriba */
     }
 }
 
 .bloque-descubrir {
-    padding: 80px 40px;
-    background-color: #fff;
-    color: #3f2a92;
-    border-top: 5px solid #3f2a92;
-    margin-bottom: 50px;
-    margin-top: -50px;
+    padding: 80px 40px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco */
+    color: #3f2a92; /* Texto violeta */
+    border-top: 5px solid #3f2a92; /* Borde superior violeta */
+    margin-bottom: 50px; /* Espacio debajo */
+    margin-top: -50px; /* Superpone con sección anterior */
 }
 
 .bloque-descubrir .contenedor {
-    max-width: 1100px;
-    min-height: 300px;
-    margin: 0 auto;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 1100px; /* Ancho máximo */
+    min-height: 300px; /* Altura mínima */
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: left; /* Texto a la izquierda */
+    display: flex; /* Flexbox para centrar verticalmente */
+    flex-direction: column; /* Apila verticalmente */
+    justify-content: center; /* Centra verticalmente */
 }
 
 .bloque-descubrir h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: 300;
+    font-size: 3rem; /* Tamaño grande de título */
+    margin-bottom: 20px; /* Espacio debajo */
+    font-weight: 300; /* Peso de fuente ligero */
 }
 
 .bloque-descubrir p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    font-weight: 300;
-    color: #3f2a92;
-    width: 50%;
-    max-width: 100%;
+    font-size: 1.2rem; /* Tamaño de texto */
+    margin-bottom: 20px; /* Espacio debajo */
+    font-weight: 300; /* Peso de fuente ligero */
+    color: #3f2a92; /* Texto violeta */
+    width: 50%; /* Ocupa la mitad del ancho */
+    max-width: 100%; /* Máximo todo el ancho */
 }
 
 .bloque-descubrir p strong {
-    color: #3f2a92;
-    font-weight: 400;
-    font-size: 1.5rem;
+    color: #3f2a92; /* Texto fuerte violeta */
+    font-weight: 400; /* Peso de fuente medio */
+    font-size: 1.5rem; /* Texto más grande */
 }
 
 .preguntas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px 100px;
-    margin-top: 30px;
+    display: flex; /* Flexbox para las preguntas */
+    flex-wrap: wrap; /* Permite envolver en varias líneas */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 40px 100px; /* Espacio entre filas y columnas */
+    margin-top: 30px; /* Espacio arriba */
 }
 
 .pregunta {
-    background-color: #e4dcf7;
-    color: #3f2a92;
-    padding: 16px 20px;
-    border-radius: 10px;
-    font-weight: 600;
-    width: 100%;
-    max-width: 300px;
-    min-width: 220px;
-    min-height: 80px;
-    height: 100px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: transform 0.2s;
+    background-color: #e4dcf7; /* Fondo violeta claro */
+    color: #3f2a92; /* Texto violeta */
+    padding: 16px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    font-weight: 600; /* Texto en negrita */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 300px; /* Ancho máximo */
+    min-width: 220px; /* Ancho mínimo */
+    min-height: 80px; /* Altura mínima */
+    height: 100px; /* Altura fija */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* Sombra suave */
+    display: flex; /* Flexbox para centrar texto */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Texto centrado */
+    transition: transform 0.2s; /* Animación al hacer hover */
 }
 
 .pregunta:hover {
-    transform: scale(1.03);
+    transform: scale(1.03); /* Efecto de agrandar al pasar mouse */
 }
 
 @media (max-width: 768px) {
     .bloque-descubrir {
-        padding: 40px 10px;
-        margin-top: -20px;
+        padding: 40px 10px; /* Menos padding */
+        margin-top: -20px; /* Menor superposición */
     }
     .bloque-descubrir h2 {
-        font-size: 1.6rem;
+        font-size: 1.6rem; /* Título más pequeño */
     }
     .bloque-descubrir p {
-        font-size: 1rem;
-        width: 100%;
+        font-size: 1rem; /* Texto más pequeño */
+        width: 100%; /* Ocupa todo el ancho */
     }
     .preguntas {
-        gap: 20px 0;
+        gap: 20px 0; /* Menos espacio entre filas */
     }
     .pregunta {
-        max-width: 95vw;
-        min-width: 160px;
-        height: auto;
-        min-height: 60px;
-        font-size: 1rem;
-        padding: 14px 10px;
+        max-width: 95vw; /* Máximo casi todo el ancho */
+        min-width: 160px; /* Ancho mínimo menor */
+        height: auto; /* Altura automática */
+        min-height: 60px; /* Altura mínima menor */
+        font-size: 1rem; /* Texto más pequeño */
+        padding: 14px 10px; /* Menos padding */
     }
 }
 
 @media (max-width: 480px) {
     .bloque-descubrir {
-        padding: 25px 4vw;
-        margin-top: -10px;
+        padding: 25px 4vw; /* Menos padding */
+        margin-top: -10px; /* Menor superposición */
     }
     .bloque-descubrir h2 {
-        font-size: 1.2rem;
-        margin-bottom: 12px;
+        font-size: 1.2rem; /* Título más pequeño */
+        margin-bottom: 12px; /* Menos espacio debajo */
     }
     .bloque-descubrir p {
-        font-size: 0.95rem;
-        margin-bottom: 14px;
+        font-size: 0.95rem; /* Texto más pequeño */
+        margin-bottom: 14px; /* Menos espacio debajo */
     }
     .preguntas {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px 0;
+        flex-direction: column; /* Apila verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        gap: 12px 0; /* Menos espacio entre filas */
     }
     .pregunta {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        font-size: 0.95rem;
-        padding: 10px 6px;
-        min-height: 48px;
-        height: auto;
+        width: 100%; /* Ocupa todo el ancho */
+        max-width: 100%; /* Máximo todo el ancho */
+        min-width: 0; /* Sin ancho mínimo */
+        font-size: 0.95rem; /* Texto más pequeño */
+        padding: 10px 6px; /* Menos padding */
+        min-height: 48px; /* Altura mínima menor */
+        height: auto; /* Altura automática */
     }
 }
 
@@ -1180,7 +1188,7 @@ nav a {
     .seccion-juego .contenido-texto {
        padding: 0.5rem 0.2rem;
        font-size: 0.95rem;
-       margin-top: 2.5rem; /* Más espacio arriba del texto */
+       margin-top: 2.5rem; 
     }
     .seccion-juego h2 {
        font-size: 1.1rem;
@@ -1324,7 +1332,7 @@ nav a {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     box-sizing: border-box;
-    margin-left: 150px; /* Separación lateral en desktop */
+    margin-left: 150px; 
 }
 
 .formulario h2 {
@@ -1430,7 +1438,8 @@ button:hover {
 }
 
 .footer {
-     background-color: #F3F5F9;
+     background-color: #fff;
+       box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); /* Sombra */
      position: relative;
      padding-top: 40px;
      padding-bottom: 20px;
@@ -1458,8 +1467,8 @@ button:hover {
 }
 
 .logo-footer {
-     width: 30px;
-     height: 30px;
+     height: 50px;
+     width: auto;
      display: block;
 }
 
