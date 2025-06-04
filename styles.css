@@ -378,7 +378,7 @@ nav a {
     padding: 0; /* Sin padding */
 }
 
-.bloque-importante .contenido {
+.bloque-importante .contenido-imp {
     flex: 1 1 50%; /* Ocupa la mitad del espacio */
     padding: 60px 40px; /* Espaciado interno */
     background: #3f2a92; /* Fondo violeta */
@@ -389,7 +389,6 @@ nav a {
     align-items: flex-start; /* Alinea a la izquierda */
     text-align: left; /* Texto alineado a la izquierda */
     width: 50%; /* Ocupa la mitad del ancho */
-    max-width: 50vw; /* Máximo la mitad de la ventana */
     margin: 0; /* Sin margen */
     box-sizing: border-box; /* Incluye padding/border en el ancho */
     position: relative; /* Para posicionar hijos relativos */
@@ -398,21 +397,34 @@ nav a {
     z-index: 2; /* Encima de la imagen */
 }
 
-.bloque-importante .contenido h2 {
-    font-size: 3rem; /* Tamaño grande de título */
-    font-weight: 300; /* Peso de fuente ligero */
+.bloque-importante .contenido-imp h2{
+    font-size: 4rem; /* Tamaño grande de título */
+    font-weight: 200; /* Peso de fuente ligero */
     margin-bottom: 20px; /* Espacio debajo */
+    width: 50vw; 
 }
 
-.bloque-importante .contenido h3 {
-    margin-top: 30px; /* Espacio arriba */
-    font-size: 1.5rem; /* Tamaño de subtítulo */
-    color: #fff; /* Texto blanco */
+.bloque-importante .contenido-imp h3{
+    font-size: 3rem; /* Tamaño grande de título */
+    font-weight: 400; /* Peso de fuente ligero */
+    margin-bottom: 20px; /* Espacio debajo */
+    width: 50vw; 
 }
 
-.bloque-importante .contenido p {
+.bloque-importante .contenido-imp p {
     margin-bottom: 15px; /* Espacio debajo */
     line-height: 1.6; /* Espaciado entre líneas */
+    font-size: 1.6rem; /* Tamaño de texto */
+    width: 65vw; 
+    font-weight: 200;
+}
+
+.bloque-importante .contenido-imp p strong{
+    margin-bottom: 15px; /* Espacio debajo */
+    line-height: 1.6; /* Espaciado entre líneas */
+    font-size: 2rem; /* Tamaño de texto */
+    width: 65vw; 
+    font-weight: 500;
 }
 
 .bloque-importante .imagen {
@@ -449,6 +461,27 @@ nav a {
     pointer-events: none; /* No bloquea clics */
 }
 
+.bloque-importante .btn {
+        display: inline-block; /* Botón en línea pero con propiedades de bloque */
+        margin-top: 2rem; /* Espacio arriba del botón */
+        background-color: #fff; /* Color de fondo */
+        color: #3a2483; /* Texto blanco */
+        font-weight: bold; /* Texto en negrita */
+        padding: 0.75rem 1.5rem; /* Espaciado interno */
+        border-radius: 20px; /* Bordes redondeados */
+        text-decoration: none; /* Sin subrayado */
+        transition: background-color 0.3s ease; /* Transición suave al cambiar color */
+        font-size: 2rem; /* Tamaño de fuente */
+        cursor: pointer; /* Cursor tipo mano al pasar */
+        border: 2px solid #7b5cdf;
+    }
+
+    .bloque-importante .btn:hover {
+        background-color: #7b5cdf; /* Color de fondo al pasar mouse */
+        color: #fff;
+        border: 2px solid #ffffff;
+    }
+
 @media (max-width: 900px) {
     .bloque-importante {
         flex-direction: column; /* Apila verticalmente */
@@ -457,14 +490,14 @@ nav a {
         margin-left: 0; /* Sin margen izquierdo */
         transform: none; /* Sin transformación */
     }
-    .bloque-importante .contenido,
+    .bloque-importante .contenido-imp,
     .bloque-importante .imagen {
         width: 100vw; /* Ocupa todo el ancho */
         max-width: 100vw; /* Máximo todo el ancho */
         left: 0; /* Sin desplazamiento */
         transform: none; /* Sin transformación */
     }
-    .bloque-importante .contenido {
+    .bloque-importante .contenido-imp {
         padding: 40px 4vw; /* Menos padding */
         text-align: left; /* Texto a la izquierda */
         align-items: flex-start; /* Alinea a la izquierda */
@@ -473,7 +506,7 @@ nav a {
         max-width: 92vw; /* Máximo 92vw */
         box-sizing: border-box; /* Incluye padding/border */
     }
-    .bloque-importante .contenido h2 {
+    .bloque-importante .contenido-imp h2 {
         font-size: 2.2rem; /* Título más pequeño */
     }
     .bloque-importante .imagen .degradado {
@@ -486,14 +519,14 @@ nav a {
 }
 
 @media (max-width: 768px) {
-    .bloque-importante .contenido {
+    .bloque-importante .contenido-imp {
         padding: 30px 3vw; /* Menos padding */
         margin-left: 0; /* Sin margen izquierdo */
         width: 94vw; /* 94% del ancho de la ventana */
         max-width: 94vw; /* Máximo 94vw */
         box-sizing: border-box; /* Incluye padding/border */
     }
-    .bloque-importante .contenido h2 {
+    .bloque-importante .contenido-imp h2 {
         font-size: 1.6rem; /* Título más pequeño */
     }
     .bloque-importante .imagen {
@@ -509,14 +542,14 @@ nav a {
 }
 
 @media (max-width: 480px) {
-    .bloque-importante .contenido {
+    .bloque-importante .contenido-imp {
         padding: 18px 2vw; /* Menos padding */
         margin-left: 0; /* Sin margen izquierdo */
         width: 98vw; /* 98% del ancho de la ventana */
         max-width: 98vw; /* Máximo 98vw */
         box-sizing: border-box; /* Incluye padding/border */
     }
-    .bloque-importante .contenido h2 {
+    .bloque-importante .contenido-imp h2 {
         font-size: 1.2rem; /* Título más pequeño */
     }
     .bloque-importante .imagen {
