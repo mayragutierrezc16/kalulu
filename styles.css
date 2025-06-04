@@ -226,7 +226,7 @@ nav a {
     }
 
     .contenido {
-        max-width: 700px; /* Ancho máximo del contenido */
+        max-width: 850px; /* Ancho máximo del contenido */
         width: 100%; /* Ocupa todo el ancho disponible */
         text-align: left; /* Texto alineado a la izquierda */
         color: #fff; /* Texto blanco */
@@ -235,7 +235,7 @@ nav a {
     }
 
     .contenido h1 {
-        font-size: 3rem; /* Tamaño grande de título */
+        font-size: 4rem; /* Tamaño grande de título */
         font-weight: 300; /* Peso de fuente ligero */
         line-height: 1.1; /* Espaciado entre líneas */
     }
@@ -246,7 +246,7 @@ nav a {
 
     .contenido p {
         margin-top: 1rem; /* Espacio arriba del párrafo */
-        font-size: 1.5rem; /* Tamaño de fuente grande */
+        font-size: 2rem; /* Tamaño de fuente grande */
         font-weight: 250; /* Peso de fuente ligero */
         line-height: 1.4; /* Espaciado entre líneas */
     }
@@ -258,14 +258,18 @@ nav a {
         color: #fff; /* Texto blanco */
         font-weight: bold; /* Texto en negrita */
         padding: 0.75rem 1.5rem; /* Espaciado interno */
-        border-radius: 8px; /* Bordes redondeados */
+        border-radius: 20px; /* Bordes redondeados */
         text-decoration: none; /* Sin subrayado */
         transition: background-color 0.3s ease; /* Transición suave al cambiar color */
-        font-size: 1.2rem; /* Tamaño de fuente */
+        font-size: 2rem; /* Tamaño de fuente */
+        cursor: pointer; /* Cursor tipo mano al pasar */
+        border: 2px solid #fff;
     }
 
     .btn:hover {
-        background-color: #361e6b; /* Color de fondo al pasar mouse */
+        background-color: #fff; /* Color de fondo al pasar mouse */
+        color: #3a2483;
+        border: 2px solid #3a2483;
     }
 
     @media (max-width: 900px) {
@@ -278,13 +282,13 @@ nav a {
             padding: 1.5rem 1rem; /* Menos padding */
         }
         .contenido h1 {
-            font-size: 2.2rem; /* Título más pequeño */
+            font-size: 3rem; /* Título más pequeño */
         }
         .contenido p {
-            font-size: 1.1rem; /* Texto más pequeño */
+            font-size: 1.8rem; /* Texto más pequeño */
         }
         .btn {
-            font-size: 1rem; /* Botón más pequeño */
+            font-size: 1.8rem; /* Botón más pequeño */
             padding: 0.6rem 1.2rem; /* Menos padding */
         }
     }
@@ -300,15 +304,15 @@ nav a {
             text-align: center; /* Centra el texto */
         }
         .contenido h1 {
-            font-size: 1.5rem; /* Título más pequeño */
+            font-size: 2rem; /* Título más pequeño */
         }
         .contenido p {
-            font-size: 0.95rem; /* Texto más pequeño */
+            font-size: 1.5rem; /* Texto más pequeño */
         }
         .btn {
             width: 100%; /* Botón ocupa todo el ancho */
             padding: 0.6rem 0; /* Menos padding lateral */
-            font-size: 1rem; /* Tamaño de fuente menor */
+            font-size: 1.5rem; /* Tamaño de fuente menor */
             margin-top: 1.2rem; /* Menos espacio arriba */
         }
     }
