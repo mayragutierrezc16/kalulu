@@ -164,7 +164,6 @@ nav a {
         transition: background-color 0.3s ease;
         font-size: 2rem;
         cursor: pointer;
-        border: 2px solid #fff;
     }
 
     .btn:hover {
@@ -266,7 +265,7 @@ nav a {
         margin-bottom: 15px;
         line-height: 1.6;
         font-size: 1.6rem;
-        width: 65vw;
+        width: 50vw;
         font-weight: 200;
         margin-left: 0;
     }
@@ -275,7 +274,7 @@ nav a {
         margin-bottom: 15px;
         line-height: 1.6;
         font-size: 2rem;
-        width: 65vw;
+        width: 50vw;
         font-weight: 500;
         margin-left: 0;
     }
@@ -425,8 +424,7 @@ nav a {
 }
 
 .preguntas-violeta .pregunta {
-    background-color: #fff;
-    color: #3f2a92;
+    color: #fff;
     padding: 18px 22px;
     border-radius: 14px;
     font-weight: 500;
@@ -438,7 +436,7 @@ nav a {
     box-shadow: 0 2px 8px rgba(63,42,146,0.08);
     display: flex;
     box-sizing: border-box;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
 }
 
 
@@ -816,13 +814,6 @@ nav a {
 
 
 
-
-.seccion-equipo {
-     padding: 3rem 1rem;
-     background-color: #fff;
-     color: #3f2a92;
-}
-
 .seccion-equipo h2 {
      font-size: 3rem;
      margin-bottom: 0.5rem;
@@ -867,80 +858,6 @@ nav a {
      border-radius: 50%;
      flex-shrink: 0;
 }
-
-
-
-
-
-
-
-.formulario {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    color: #2e2e2e;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    box-sizing: border-box;
-    margin-left: 150px; 
-}
-
-.formulario h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: 300;
-    color: #3f2a92;
-    text-align: left;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    width: 100%;
-}
-
-label {
-    font-weight: 500;
-    margin-bottom: 0.2rem;
-}
-
-.requerido {
-    color: red;
-}
-
-input,
-select,
-textarea {
-    padding: 0.6rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-family: inherit;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-button {
-    align-self: flex-start;
-    background-color: #4e32a8;
-    color: white;
-    border: none;
-    padding: 0.6rem 1.5rem;
-    border-radius: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: 'Roboto', sans-serif;
-}
-
-button:hover {
-    background-color: #3a2483;
-}
-
-
-
-
 
 
 
