@@ -1354,7 +1354,7 @@ nav a {
         text-align: center;
     }
     .seccion-juego h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .seccion-juego p,
     .seccion-juego p strong {
@@ -1399,11 +1399,11 @@ nav a {
         text-align: center;
     }
     .seccion-juego h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .seccion-juego p,
     .seccion-juego p strong {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .seccion-juego .btn-juego {
         font-size: 1.5rem;
@@ -1439,7 +1439,7 @@ nav a {
         object-fit: cover;
         display: block;
     }
-
+}
 
 .seccion-equipo {
     margin-bottom: 2rem;
