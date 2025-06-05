@@ -1442,12 +1442,18 @@ nav a {
     }
 }
 
+.seccion-equipo {
+    margin-bottom: 2rem;
+}
+
 .seccion-equipo h2 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-weight: 300;
     text-align: left;
     margin-left: 50px; 
+    color: #3a2483;
+    margin-top: 2rem;
 }
 
 .seccion-equipo p {
@@ -1455,6 +1461,7 @@ nav a {
     margin-bottom: 2rem;
     text-align: left;
     margin-left: 50px; 
+    color: #4B2A9B;
 }
 
 .equipo-grid {
@@ -1472,6 +1479,7 @@ nav a {
     gap: 1rem;
     align-items: flex-start;
     width: 100%;
+    color: #3a2483;
 }
 
 .miembro p {
