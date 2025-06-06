@@ -546,17 +546,17 @@ nav a {
             text-align: center;
         }
         .bloque-importante .contenido-imp h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
         .bloque-importante .contenido-imp h3 {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
         .bloque-importante .contenido-imp p,
         .bloque-importante .contenido-imp p strong {
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
         .bloque-importante .btn {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             padding: 0.7rem 1.3rem;
         }
         .bloque-importante .imagen {
@@ -671,7 +671,7 @@ nav a {
         .bloque-descubrir {
             width: 98vw;
             margin-left: 1vw;
-            margin-top: 30px; /* Añadido margin-top */
+            margin-top: 30px;
         }
         .bloque-descubrir .contenedor {
             gap: 20px;
@@ -683,14 +683,17 @@ nav a {
         }
         .preguntas-violeta .pregunta {
             min-width: 250px;
-            font-size: 1.4rem; /* Agrandado */
+            font-size: 1.4rem;
+            text-align: center;
         }
         .bloque-descubrir h2 {
-            font-weight: 600; /* Más grueso que strong */
-            font-size: 2.3rem; /* Agrandado */
+            font-weight: 600;
+            font-size: 2.3rem;
+            text-align: center;
         }
         .bloque-descubrir p {
-            font-size: 2rem; /* Agrandado */
+            font-size: 2rem;
+            text-align: center;
         }
     }
 
@@ -699,7 +702,7 @@ nav a {
             flex-direction: column;
             width: 100vw;
             margin-left: 0;
-            margin-top: 30px; /* Añadido margin-top */
+            margin-top: 30px;
         }
         .bloque-descubrir .contenedor {
             flex-direction: column;
@@ -719,14 +722,17 @@ nav a {
         .preguntas-violeta .pregunta {
             width: 100%;
             min-width: 0;
-            font-size: 1.25rem; /* Agrandado */
+            font-size: 1.25rem;
+            text-align: center;
         }
         .bloque-descubrir h2 {
-            font-weight: 600; /* Más grueso que strong */
-            font-size: 2rem; /* Agrandado */
+            font-weight: 600;
+            font-size: 2rem;
+            text-align: center;
         }
         .bloque-descubrir p {
-            font-size: 2rem; /* Agrandado */
+            font-size: 2rem;
+            text-align: center;
         }
     }
 
@@ -734,7 +740,7 @@ nav a {
         .bloque-descubrir {
             width: 100vw;
             margin-left: 0;
-            margin-top: 30px; /* Añadido margin-top */
+            margin-top: 30px;
             margin-bottom: 30px;
         }
         .bloque-descubrir .contenedor {
@@ -747,12 +753,14 @@ nav a {
             text-align: center;
         }
         .bloque-descubrir h2 {
-            font-size: 1.7rem; /* Agrandado */
-            font-weight: 700; /* Más grueso que strong */
+            font-size: 1.7rem;
+            font-weight: 700;
+            text-align: center;
         }
         .bloque-descubrir p {
-            font-size: 1.5rem; /* Agrandado */
+            font-size: 1.5rem;
             width: 100%;
+            text-align: center;
         }
         .bloque-descubrir .preguntas-violeta {
             padding: 15px 2vw;
@@ -760,10 +768,11 @@ nav a {
             min-width: 0;
         }
         .preguntas-violeta .pregunta {
-            font-size: 1.5rem; /* Agrandado */
+            font-size: 1.5rem;
             padding: 10px 8px;
             min-width: 0;
             min-height: 50px;
+            text-align: center;
         }
     }
     .bloque-beneficios {
@@ -1086,28 +1095,45 @@ nav a {
             margin-left: 2vw;
             padding: 0 2vw;
             margin-top: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .seccion-kalulu h2 {
             font-size: 2.8rem;
+            text-align: center;
+            width: 100%;
         }
         .seccion-kalulu p {
             font-size: 1.35rem;
             width: 95%;
             margin-top: 1.2rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         .seccion-kalulu .destacado {
             font-size: 1.5rem;
             margin-top: 1.2rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         .seccion-kalulu .materiales {
             width: 100%;
             margin-top: 2rem;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
         }
         .btn-inscripcion {
             font-size: 1.25rem;
             padding: 1rem 1.7rem;
             margin-left: 0;
             margin-top: 1.2rem;
+            align-self: center;
         }
     }
 
@@ -1117,68 +1143,93 @@ nav a {
             margin-left: 0;
             padding: 0 2vw;
             margin-top: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .seccion-kalulu h2 {
-            font-size: 2.3rem;
+            font-size: 3rem;
+            text-align: center;
+            width: 100%;
         }
         .seccion-kalulu p {
-            font-size: 1.18rem;
+            font-size: 1.5rem;
             width: 100%;
             margin-top: 1.2rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         .seccion-kalulu .destacado {
-            font-size: 1.25rem;
+            font-size: 1.7rem;
             margin-top: 1.2rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         .seccion-kalulu .materiales {
             width: 100%;
             flex-direction: column;
             align-items: center;
             margin-top: 2rem;
+            justify-content: center;
+            display: flex;
         }
         .btn-inscripcion {
-            font-size: 1.15rem;
+            font-size: 1.5rem;
             padding: 0.9rem 1.2rem;
             margin-left: 0;
             margin-top: 1.2rem;
+            align-self: center;
         }
     }
 
     @media (max-width: 600px) {
         .seccion-kalulu {
-            padding: 0 1vw;
-            margin-top: 1.5rem;
+            max-width: 100vw;
+            margin-left: 0;
+            padding: 0 2vw;
+            margin-top: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .seccion-kalulu h2 {
-            font-size: 1.5rem;
-            text-align: center;
-            margin-top: 1.2rem;
-        }
-        .seccion-kalulu .destacado {
-            font-size: 1.2rem;
+            font-size: 3rem;
             text-align: center;
             width: 100%;
-            margin-top: 1.2rem;
         }
         .seccion-kalulu p {
-            font-size: 1.05rem;
+            font-size: 1.5rem;
             width: 100%;
-            text-align: center;
             margin-top: 1.2rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .seccion-kalulu .destacado {
+            font-size: 1.7rem;
+            margin-top: 1.2rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         .seccion-kalulu .materiales {
             width: 100%;
             flex-direction: column;
             align-items: center;
-            margin-top: 1.8rem;
+            margin-top: 2rem;
+            justify-content: center;
+            display: flex;
         }
         .btn-inscripcion {
-            font-size: 1.05rem;
-            padding: 0.7rem 1rem;
+            font-size: 1.5rem;
+            padding: 0.9rem 1.2rem;
             margin-left: 0;
-            width: 100%;
-            justify-content: center;
             margin-top: 1.2rem;
+            align-self: center;
         }
     }
 
@@ -1225,7 +1276,7 @@ nav a {
         width: 90vw;
     }
     .texto {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     .separador {
         max-width: 300px;
@@ -1234,11 +1285,11 @@ nav a {
 
 @media (max-width: 600px) {
     .destacado {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         width: 100vw;
     }
     .texto {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .separador {
         max-width: 150px;
@@ -1354,84 +1405,15 @@ nav a {
         text-align: center;
     }
     .seccion-juego h2 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     .seccion-juego p,
     .seccion-juego p strong {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
     .seccion-juego .btn-juego {
         font-size: 1.5rem;
-        padding: 0.8rem 1.5rem;
-    }
-    .seccion-juego .imagen-juego img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.seccion-juego .imagen-juego .degradado{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #3f2a92 0%, transparent 20%);
-    z-index: 2;
-    pointer-events: none;
-}
-.seccion-juego .imagen-juego .degradado-2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #3f2a92 0%, transparent 20%);
-    z-index: 2;
-    pointer-events: none;
-}
-}
-
-@media (max-width: 600px) {
-    .seccion-juego .contenido-texto {
-        padding: 1rem 2vw 0.2rem 2vw;
-        max-width: 100vw;
-        text-align: center;
-    }
-    .seccion-juego h2 {
-        font-size: 3rem;
-    }
-    .seccion-juego p,
-    .seccion-juego p strong {
-        font-size: 2rem;
-    }
-    .seccion-juego .btn-juego {
-        font-size: 1.5rem;
-    }
-    .seccion-juego .imagen-juego img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.seccion-juego .imagen-juego .degradado{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #3f2a92 0%, transparent 20%);
-    z-index: 2;
-    pointer-events: none;
-}
-.seccion-juego .imagen-juego .degradado-2{
-   display: none;
-}
-    .seccion-juego .imagen-juego {
-        min-height: 250px;
-        max-width: 100vw;
-        width: 100%;
-        margin-top: 1rem;
+        padding: 1rem 1.7rem;
     }
     .seccion-juego .imagen-juego img {
         width: 100%;
@@ -1439,7 +1421,39 @@ nav a {
         object-fit: cover;
         display: block;
     }
-}
+    .seccion-juego .imagen-juego .degradado{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #3f2a92 0%, transparent 20%);
+        z-index: 2;
+        pointer-events: none;
+    }
+    .seccion-juego .imagen-juego .degradado-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #3f2a92 0%, transparent 20%), 
+                    linear-gradient(to bottom, #3f2a92 0%, transparent 20%);
+        z-index: 2;
+        pointer-events: none;
+    }
+    .seccion-juego .imagen-juego .degradado {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #3f2a92 0%, transparent 40%);
+        z-index: 2;
+        pointer-events: none;
+    }
+    }
+
 
 .seccion-equipo {
     margin-bottom: 2rem;
@@ -1465,12 +1479,15 @@ nav a {
 
 .equipo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2rem;
     max-width: 1000px;
     margin: 0 auto;
     text-align: left;
     width: 100%;
+    align-items: flex-start;
+    justify-items: flex-start;
+    margin-left: 3vw;
 }
 
 .miembro {
@@ -1479,6 +1496,7 @@ nav a {
     align-items: flex-start;
     width: 100%;
     color: #3a2483;
+    justify-content: flex-start;
 }
 
 .miembro p {
@@ -1693,4 +1711,4 @@ nav a {
         height: 22px;
         margin-left: 6px;
     }
-}
+} }
