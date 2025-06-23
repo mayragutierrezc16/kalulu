@@ -80,27 +80,6 @@ nav a {
         font-weight: 300;
 }
 
-.download-btn {
-        background-color: #44348E;
-        color: white;
-        border: none;
-        padding: 0.6rem 1rem;
-        font-weight: bold;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        margin-left: 200px;
-}
-
-.download-btn:hover {
-        background-color: white;
-        color: #44348E;
-        border: 2px solid #44348E;
-}
-
 /* Responsive Header */
 @media (max-width: 900px) {
     header .container {
@@ -123,20 +102,6 @@ nav a {
         nav a {
         font-size: 1.15rem;
         padding: 0.4rem 0;
-        }
-        .download-btn {
-        margin-left: 0;
-        margin-top: 0;
-        font-size: 0.95rem;
-        padding: 0.45rem 0.9rem;
-        width: auto;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        align-self: center;
-        /* Centrar el botón horizontalmente */
-        margin-right: auto;
-        margin-left: auto;
         }
         .header-row {
         display: none;
@@ -164,19 +129,6 @@ nav a {
         nav a {
         font-size: 1.05rem;
         padding: 0.35rem 0;
-        }
-        .download-btn {
-        width: auto;
-        justify-content: center;
-        font-size: 0.85rem;
-        padding: 0.35rem 0.7rem;
-        margin-top: 0;
-        margin-left: 0;
-        align-self: center;
-        display: flex;
-        /* Centrar el botón horizontalmente */
-        margin-right: auto;
-        margin-left: auto;
         }
         .header-row {
         display: none;
@@ -289,69 +241,59 @@ nav a {
         }
     }
 
-    .video {
-        padding: 2rem 0;
+    .videos-dobles {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        justify-content: center;
+        align-items: flex-start; /* Alinea las tarjetas arriba */
+        gap: 2rem;
+        padding: 2rem;
+        flex-wrap: wrap;
         box-sizing: border-box;
     }
 
-    .video h2 {
-        font-size: 3rem;
-        color: #3f2a92;
-        font-weight: 400;
-        margin-bottom: 1.5rem;
-        text-align: center;
-        width: 100%;
-    }
-
-    .video-container {
-        position: relative;
-        width: 100%;
-        max-width: 800px;
-        aspect-ratio: 16 / 9;
-        margin: 0 auto;
-        overflow: hidden;
+    .video-card {
+        width: 500px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #000;
+        flex-direction: column;
+        align-items: flex-start; /* Justifica el contenido a la izquierda */
+        text-align: left;        /* Texto alineado a la izquierda */
     }
 
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
+    .video-card h3 {
+        color: #3f2a92;
+        font-size: 1.7rem; /* Agrandado */
+        font-weight: 500;
+        margin-bottom: 1rem;
+        text-align: left;        /* Alinea el texto a la izquierda */
+        width: 100%;             /* Ocupa todo el ancho para alinear igual */
+        min-height: 3.5em;       /* Fuerza altura mínima igual para todos los títulos */
+        display: flex;
+        align-items: flex-end;   /* Alinea el texto abajo si es de menos líneas */
+        font-size: 2rem;         /* Agranda la letra del título */
+        margin-bottom: 2rem;     /* Separa los títulos de las imágenes */
+        }
+
+        .video-link {
+        position: relative;
+        display: flex;           /* Flex para alinear imagen */
+        align-items: center;     /* Centra verticalmente la imagen */
+        justify-content: center; /* Centra horizontalmente la imagen */
+        width: 100%;
+        aspect-ratio: 16 / 9;    /* Relación más moderna para videos */
+        overflow: hidden;
+        border-radius: 12px;
+        background: #eee;
+        margin-bottom: 2.5rem;   /* Separa las imágenes del texto siguiente */
+        }
+
+        .video-link img {
         width: 100%;
         height: 100%;
-        border: none;
-    }
+        object-fit: cover;
+        display: block;
+        }
 
-    /* Responsive styles */
-    @media (max-width: 900px) {
-        .video h2 {
-            font-size: 2rem;
-        }
-        .video-container {
-            max-width: 95vw;
-        }
-    }
 
-    @media (max-width: 600px) {
-        .video {
-            padding: 1rem 0;
-        }
-        .video h2 {
-            font-size: 1.2rem;
-            padding: 0 0.5rem;
-        }
-        .video-container {
-            max-width: 100vw;
-            aspect-ratio: 16 / 9;
-        }
-    }
 
     .bloque-importante {
         display: flex;
@@ -1452,12 +1394,88 @@ nav a {
         z-index: 2;
         pointer-events: none;
     }
-    }
+}
 
+.proximos-eventos {
+    background-color: #432894;
+    color: white;
+    padding: 2rem;
+    text-align: left;
+}
+
+.proximos-eventos h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+        margin-left: 30px;
+}
+
+.eventos-grid {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 320px;
+    max-width: 350px;
+    min-width: 260px;
+    margin: 0 1rem;
+}
+
+.evento img,
+.flyer-placeholder {
+    height: 600px;
+    width: auto;
+    max-width: 120%;
+    border-radius: 12px;
+    object-fit: cover;
+    background-color: #ccc;
+    display: block;
+}
+
+.flyer-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    font-size: 1rem;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+    background: white;
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.countdown div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.countdown span:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
 .seccion-equipo {
     margin-bottom: 2rem;
-}
+}       
 
 .seccion-equipo h2 {
     font-size: 3rem;
@@ -1479,7 +1497,7 @@ nav a {
 
 .equipo-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem 2rem;
     max-width: 1000px;
     margin: 0 auto;
@@ -1711,4 +1729,4 @@ nav a {
         height: 22px;
         margin-left: 6px;
     }
-} }
+} 

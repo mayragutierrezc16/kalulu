@@ -15,7 +15,6 @@
                 <a href="https://excellolab.org/" target="_blank">Excello Lab</a>
                 <a href="https://www.youtube.com/@KaluluChannel" target="_blank">YouTube</a>
             </nav>
-            <button class="download-btn">Télécharger l'application</button>
         </div>
     </header>
 
@@ -25,19 +24,28 @@
             <div class="contenido">
                 <h1>Los docentes <span class="bold">podemos transformar</span> la alfabetización</h1>
                 <p>Sé parte de un proyecto de ciencia colectiva para mejorar la educación argentina empoderando a los docentes.</p>
-                <a href="#" class="btn">Quiero participar</a>
+                <a href="https://kalulu.excellolab.org/cienciaciudadana-argentina/" class="btn">Quiero participar</a>
             </div>
         </section>
 
-        <!-- Video con portada -->
-        <section class="video">
-            <h2>¡Visita nuestro canal de Youtube!</h2>
-            <div class="video-container">
-                <a href="https://www.youtube.com/watch?v=8VjW6hXx9P8" target="_blank">
-                    <img src="imagenes/imagen (11).jpg" alt="Portada del video explicativo" style="width:100%; height:auto; object-fit:cover; border-radius:12px; cursor:pointer;">
-                </a>
-            </div>
-        </section>
+<section class="videos-dobles">
+  <div class="video-card">
+    <h3>Docente, sumate a nuestro proyecto de ciencia ciudadana</h3>
+      <img src="imagenes/imagen (11).jpg" alt="Video Kalulu">
+      <div class="overlay">
+      </div>
+    </a>
+  </div>
+<div class="video-card">
+    <h3>Visita nuestro canal de YouTube</h3>
+    <a href="https://youtube.com/playlist?list=PL8lYJEjgMTsjJvTY7fZpJHRF9RTUaAkGf&si=n6gSGe3zIuxJzniJ">
+        <img src="imagenes/imagen (11).jpg" alt="Video Kalulu">
+    </a>
+</div>
+    </a>
+  </div>
+</section>
+
 
         <!-- Sección 1 -->
         <section class="bloque-importante">
@@ -49,7 +57,7 @@
                 <p>Necesitamos pruebas reales, con aulas reales, con docentes reales. Y por eso te necesitamos a vos.</p>
                 <h3>¡Sumate al cambio!</h3>
                 <p>Participá, experimentá, compartí tus resultados.<br><strong>Entre todos vamos a descubrir qué funciona mejor.</strong></p>
-                <a href="#" class="btn">Quiero participar</a>
+                <a href="https://kalulu.excellolab.org/cienciaciudadana-argentina/" class="btn">Quiero participar</a>
             </div>
             <div class="imagen">
                 <img src="imagenes/imagen (3).jpg" alt="Docente enseñando">
@@ -121,10 +129,10 @@
         <section class="seccion-kalulu">
             <h2>¿Qué es Kalulu?</h2>
             <p class="destacado">Un enfoque basado en evidencia para enseñar a leer</p>
-            <p><strong>Kalulu</strong> es un método 100% fonético, reconocido por la ciencia como <strong>el más efectivo para aprender a leer</strong>.</p>
-            <p>Está adaptado especialmente al español rioplatense por las doctoras Melina Vladisauskas y Julia Hermida, combinando investigación en educación y neurociencia.</p>
+            <p><strong>Kalulu</strong> es un método 100% fonético.</strong></p>
+            <p>Esta adaptado especialmente al español rioplatense por las doctoras Melina Vladisauskas y Julia Hermida, y revisado por las docentes Agripina Sanchez Menta y Romina Curto.</p>
             <p class="materiales">Todos los materiales digitales son gratuitos y podés descargarlos acá:</p>
-            <a href="#" class="btn-inscripcion">Inscribite gratis aquí</a>
+            <a href="kalulu.excellolab.org/langue/argentina" class="btn-inscripcion">Inscribite gratis aquí</a>
         </section>
 
         <!-- Sección 6 --> 
@@ -134,31 +142,131 @@
             <p class="texto">¡Necesitamos tu experiencia para seguir mejorando!</p>
         </section>
 
-        <!-- Sección 7 --> 
-        <section class="seccion-juego">
-            <div class="contenido-texto">
-                <h2>Poné a prueba tus conocimientos jugando</h2>
-                <p><strong>¿Sabés cuánto conocés sobre la ciencia de la lectura?</strong></p>
-                <p>Jugá y aprendé con nuestro quiz interactivo.</p>
-                <a href="#" class="btn-juego">Jugar ahora</a>
-            </div>
-            <div class="imagen-juego">
-                <div class="degradado-2"></div>
-                <img src="imagenes/imagen (10).jpg">
-                <div class="degradado"></div>
-            </div>
-        </section>
+        <!-- Sección 7 -->
+         <section class="proximos-eventos">
+  <h2>Próximos Eventos</h2>
+  <div class="eventos-grid">
+
+    <!-- Evento 1 -->
+    <div class="evento">
+        <img src="imagenes/evento1.jpeg" alt="Flyer Evento 1">
+        <div class="countdown" id="countdown-evento1">
+            <div><span class="dias">00</span><span>Días</span></div>
+            <div><span class="horas">00</span><span>Horas</span></div>
+            <div><span class="minutos">00</span><span>Minutos</span></div>
+        </div>
+    </div>
+    <script>
+        function iniciarCuentaRegresiva(id, fechaObjetivo) {
+            const countdown = document.getElementById(id);
+            function actualizar() {
+                const ahora = new Date();
+                const objetivo = new Date(fechaObjetivo);
+                const diff = objetivo - ahora;
+                if (diff <= 0) {
+                    countdown.querySelector('.dias').textContent = '00';
+                    countdown.querySelector('.horas').textContent = '00';
+                    countdown.querySelector('.minutos').textContent = '00';
+                    return;
+                }
+                const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                const minutos = Math.floor((diff / (1000 * 60)) % 60);
+                countdown.querySelector('.dias').textContent = dias.toString().padStart(2, '0');
+                countdown.querySelector('.horas').textContent = horas.toString().padStart(2, '0');
+                countdown.querySelector('.minutos').textContent = minutos.toString().padStart(2, '0');
+            }
+            actualizar();
+            setInterval(actualizar, 1000);
+        }
+        iniciarCuentaRegresiva('countdown-evento1', '2025-07-03T19:00:00');
+    </script>
+
+    <!-- Evento 2 -->
+    <div class="evento">
+      <div class="flyer-placeholder"></div>
+      <div class="countdown" data-fecha="2025-07-10T17:00:00">
+        <div><span class="dias">00</span><span>Días</span></div>
+        <div><span class="horas">00</span><span>Horas</span></div>
+        <div><span class="segundos">00</span><span>Segundos</span></div>
+      </div>
+    </div>
+
+    <!-- Evento 3 -->
+    <div class="evento">
+      <div class="flyer-placeholder"></div>
+      <div class="countdown" data-fecha="2025-07-20T18:30:00">
+        <div><span class="dias">00</span><span>Días</span></div>
+        <div><span class="horas">00</span><span>Horas</span></div>
+        <div><span class="segundos">00</span><span>Segundos</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
         <!-- Sección 8 --> 
         <section class="seccion-equipo">
             <h2>¿Quiénes somos?</h2>
             <p>Este proyecto es desarrollado por un <strong>equipo interdisciplinario</strong><br />de investigadores y especialistas en educación y neurociencias:</p>
             <div class="equipo-grid">
-                <div class="miembro"><div class="avatar"></div><div><h3>Melina Vladisauskas</h3><p>Lorem ipsum...</p></div></div>
-                <div class="miembro"><div class="avatar"></div><div><h3>Julia Hermida</h3><p>Lorem ipsum...</p></div></div>
-                <div class="miembro"><div class="avatar"></div><div><h3>Cassandra Watkins</h3><p>Lorem ipsum...</p></div></div>
-                <div class="miembro"><div class="avatar"></div><div><h3>Andrés Rieznik</h3><p>Lorem ipsum...</p></div></div>
-                <div class="miembro"><div class="avatar"></div><div><h3>Stanislas Dehaene</h3><p>Lorem ipsum...</p></div></div>
+                <div class="miembro">
+                    <img class="avatar" src="imagenes/melina.jpg">
+                    <div>
+                        <h3>Melina Vladisauskas</h3>
+                        <p>Dra. en Biología, Postdoc en Excello Lab - Collège de France</p>
+                    </div>
+                </div>
+                <div class="miembro">
+                    <img class="avatar" src="imagenes/julia.jpeg">
+                    <div>
+                        <h3>Julia Hermida</h3>
+                        <p>Dra. en Psicología UBA, Profesora adjunta en UNAHUR, Investigadora Asistente en CONICET</p>
+                    </div>
+                </div>
+                <div class="miembro">
+                    <img class="avatar">
+                    <div>
+                        <h3>Cassandra Watkins</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="miembro">
+                    <img class="avatar" src="imagenes/andres.jpg">
+                    <div>
+                        <h3>Andrés Rieznik</h3>
+                        <p>Dr. en Física, Profesor full time en UTDT, Comunicador científico</p>
+                    </div>
+                </div>
+                <div class="miembro">
+                    <img class="avatar">
+                    <div>
+                        <h3>Stanislas Dehaene</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="miembro">
+                    <img class="avatar" src="imagenes/agrispina.jpg">
+                    <div>
+                        <h3>Agripina Sanchez Menta</h3>
+                        <p>Docente de primaria y Psicopedagoga</p>
+                    </div>
+                </div>
+                <div class="miembro">
+                    <img class="avatar">
+                    <div>
+                        <h3>Romina Curto</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="miembro">
+                    <img class="avatar">
+                    <div>
+                        <h3>Marie Lubineau</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
