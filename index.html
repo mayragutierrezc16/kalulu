@@ -29,13 +29,19 @@
         </section>
 
 <section class="videos-dobles">
-  <div class="video-card">
+<div class="video-card" id="video-card-cc">
     <h3>Docente, sumate a nuestro proyecto de ciencia ciudadana</h3>
-      <img src="imagenes/imagen (11).jpg" alt="Video Kalulu">
-      <div class="overlay">
-      </div>
-    </a>
-  </div>
+    <img src="imagenes/imagen (11).jpg" alt="Video Kalulu" id="video-thumb-cc" style="cursor:pointer;">
+</div>
+<script>
+    document.getElementById('video-thumb-cc').addEventListener('click', function() {
+        const card = document.getElementById('video-card-cc');
+        card.innerHTML = `
+            <h3>Docente, sumate a nuestro proyecto de ciencia ciudadana</h3>
+            <video src="imagenes/video.mp4" controls autoplay style="width:65%;height:65%;object-fit:cover;"></video>
+        `;
+    });
+</script>
 <div class="video-card">
     <h3>Visita nuestro canal de YouTube</h3>
     <a href="https://youtube.com/playlist?list=PL8lYJEjgMTsjJvTY7fZpJHRF9RTUaAkGf&si=n6gSGe3zIuxJzniJ">
