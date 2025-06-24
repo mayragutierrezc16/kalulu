@@ -253,10 +253,12 @@ nav a {
 
     .video-card {
         width: 500px;
+        height: 600px;
         display: flex;
         flex-direction: column;
         align-items: flex-start; /* Justifica el contenido a la izquierda */
         text-align: left;        /* Texto alineado a la izquierda */
+        box-sizing: border-box;
     }
 
     .video-card h3 {
@@ -278,7 +280,7 @@ nav a {
         display: flex;           /* Flex para alinear imagen */
         align-items: center;     /* Centra verticalmente la imagen */
         justify-content: center; /* Centra horizontalmente la imagen */
-        width: 100%;
+        height: 600px;
         aspect-ratio: 16 / 9;    /* Relación más moderna para videos */
         overflow: hidden;
         border-radius: 12px;
@@ -288,7 +290,8 @@ nav a {
 
         .video-link img {
         width: 100%;
-        height: 100%;
+        height: 600px;
+        max-height:400px;
         object-fit: cover;
         display: block;
         }
@@ -1424,30 +1427,21 @@ nav a {
     flex-direction: column;
     align-items: center;
     flex: 1 1 320px;
-    max-width: 350px;
-    min-width: 260px;
+    max-width: 500px;
     margin: 0 1rem;
     box-sizing: border-box;
 }
 
-.evento img,
-.flyer-placeholder {
-    height: 600px;
-    width: 100%;
+.evento img {
+    height: 700px;
+    width: auto;
     max-width: 100%;
     border-radius: 12px;
-    object-fit: cover;
+    object-fit: contain;
     background-color: #ccc;
     display: block;
 }
 
-.flyer-placeholder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #999;
-    font-size: 1rem;
-}
 
 .countdown {
     display: flex;
