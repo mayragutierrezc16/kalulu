@@ -149,7 +149,7 @@
 
     <!-- Evento 1 -->
     <div class="evento">
-        <img src="imagenes/evento1.jpeg">
+        <img src="imagenes/Evento2.jpg">
         <div class="countdown" id="countdown-evento1">
             <div><span class="dias">00</span><span>Días</span></div>
             <div><span class="horas">00</span><span>Horas</span></div>
@@ -170,7 +170,7 @@
                     countdown.querySelector('.minutos').textContent = '00';
                     return;
                 }
-                const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const   dias = Math.floor(diff / (1000 * 60 * 60 * 24));
                 const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
                 const minutos = Math.floor((diff / (1000 * 60)) % 60);
                 countdown.querySelector('.dias').textContent = dias.toString().padStart(2, '0');
@@ -181,11 +181,12 @@
             setInterval(actualizar, 1000);
         }
         // 3 de julio 2025 19:00hs Argentina (GMT-3)
-        iniciarCuentaRegresiva('countdown-evento1', '2025-07-03T19:00:00-03:00');
+        iniciarCuentaRegresiva('countdown-evento1', '2025-08-07T19:00:00-03:00');
     </script>
 
   </div>
 </section>
+
 
 
         <!-- Sección 8 --> 
