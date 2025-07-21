@@ -1406,6 +1406,13 @@ nav a {
     text-align: left;
 }
 
+#eventos-anteriores {
+    background-color: white;
+    color: #432894;
+    padding: 2rem;
+    text-align: left;
+}
+
 .proximos-eventos h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -1440,6 +1447,7 @@ nav a {
     object-fit: contain;
     background-color: #ccc;
     display: block;
+    border: #432894 2px solid;
 }
 
 .btn-evento {
@@ -1487,6 +1495,8 @@ nav a {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+
 
 /* Responsive styles */
 @media (max-width: 1100px) {

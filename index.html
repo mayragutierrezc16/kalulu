@@ -137,27 +137,41 @@
 
         <!-- Sección 6 --> 
         <section class="mensaje">
-            <hr class="separador" />
+            <hr class="separador"/>
             <p class="destacado">En esta investigación, vamos a probar distintas versiones de Kalulu para descubrir, junto a docentes como vos, <strong>qué funciona mejor y por qué</strong>.</p>
             <p class="texto">¡Necesitamos tu experiencia para seguir mejorando!</p>
         </section>
 
-        <!-- Sección 7 -->
-         <section class="proximos-eventos">
-  <h2>Próximos Eventos</h2>
-  <div class="eventos-grid">
-
-    <!-- Evento 1 -->
-    <div class="evento">
+<div class="secciones-eventos">
+  <!-- Sección Próximos Eventos -->
+  <section class="proximos-eventos">
+    <h2>Próximos Eventos</h2>
+    <div class="eventos-grid">
+      <div class="evento">
         <img src="imagenes/Evento2.jpg">
         <div class="countdown" id="countdown-evento1">
-            <div><span class="dias">00</span><span>Días</span></div>
-            <div><span class="horas">00</span><span>Horas</span></div>
-            <div><span class="minutos">00</span><span>Minutos</span></div>
+          <div><span class="dias">00</span><span>Días</span></div>
+          <div><span class="horas">00</span><span>Horas</span></div>
+          <div><span class="minutos">00</span><span>Minutos</span></div>
         </div>
         <a href="#" class="btn-evento">Inscribite</a>
+      </div>
+      
     </div>
-    <script>
+  </section>
+
+  <!-- Sección Eventos Anteriores -->
+  <section class="proximos-eventos" id="eventos-anteriores">
+    <h2>Eventos Anteriores</h2>
+    <div class="eventos-grid">
+      <div class="evento">
+        <img src="imagenes/evento1.jpeg">
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
         function iniciarCuentaRegresiva(id, fechaObjetivo) {
             const countdown = document.getElementById(id);
             function actualizar() {
@@ -184,10 +198,7 @@
         iniciarCuentaRegresiva('countdown-evento1', '2025-08-07T19:00:00-03:00');
     </script>
 
-  </div>
-</section>
-
-
+<hr class="separador"/>
 
         <!-- Sección 8 --> 
         <section class="seccion-equipo">
